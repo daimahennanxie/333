@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- Example MAVLink Camera Protocol definition file -->
 <mavlinkcamera>
-    <definition version="7">
+    <definition version="6">
         <model>T100</model>
         <vendor>Foo Industries</vendor>
     </definition>
@@ -53,7 +53,7 @@
                 <option name="Incandescent" value="1" />
                 <option name="Sunset" value="3" />
                 <option name="Sunny" value="4" />
-                <option name="Cloudy" value="5" />
+                <option name="Bloudy" value="5" />
                 <option name="Fluorescent" value="7" />
             </options>
         </parameter>
