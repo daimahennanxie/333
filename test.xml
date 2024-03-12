@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- Example MAVLink Camera Protocol definition file -->
 <mavlinkcamera>
-    <definition version="6">
+    <definition version="7">
         <model>T100</model>
         <vendor>Foo Industries</vendor>
     </definition>
