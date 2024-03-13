@@ -40,21 +40,17 @@
                             <roption name="600" value="600" />
                             <roption name="800" value="800" />
                             <roption name="1600" value="1600" />
-                            <roption name="3200" value="3200" />
                         </parameterrange>
                     </parameterranges>
                 </option>
             </options>
         </parameter>
-        <parameter name="CAM_WBMODE" type="uint32" default="0">
-            <description>White Balance Mode</description>
+        <parameter name="CAM_WBMODE" type="uint8" default="0">
+            <description>AWB Mode</description>
             <options>
-                <option name="Auto" value="0" />
-                <option name="Incandescent" value="1" />
-                <option name="Sunset" value="3" />
-                <option name="Sunny" value="4" />
-                <option name="Bloudy" value="5" />
-                <option name="Fluorescent" value="7" />
+                <option name="Auto" value="A" />
+                <option name="Sunny" value="B" />
+                <option name="Cloudy" value="C" />
             </options>
         </parameter>
         <parameter name="CAM_EXPMODE" type="uint32" default="0">
