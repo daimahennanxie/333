@@ -32,14 +32,14 @@
                     </exclusions>
                     <parameterranges>
                         <parameterrange parameter="CAM_ISO" condition="CAM_EXPMODE=1">
-                            <roption name="100" value="A" />
-                            <roption name="150" value="B" />
-                            <roption name="200" value="C" />
-                            <roption name="300" value="D" />
-                            <roption name="400" value="E" />
-                            <roption name="600" value="F" />
-                            <roption name="800" value="G" />
-                            <roption name="1600" value="H" />
+                            <roption name="100" value="100" />
+                            <roption name="150" value="200" />
+                            <roption name="200" value="300" />
+                            <roption name="300" value="400" />
+                            <roption name="400" value="500" />
+                            <roption name="600" value="600" />
+                            <roption name="800" value="700" />
+                            <roption name="1600" value="800" />
                         </parameterrange>
                     </parameterranges>
                 </option>
@@ -48,9 +48,9 @@
         <parameter name="CAM_WBMODE" type="uint32" default="0">
             <description>AWB Mode</description>
             <options>
-                <option name="Auto" value="A" />
-                <option name="Sunny" value="B" />
-                <option name="Cloudy" value="C" />
+                <option name="Auto" value="2" />
+                <option name="Sunny" value="3" />
+                <option name="Cloudy" value="4" />
             </options>
         </parameter>
         <parameter name="CAM_EXPMODE" type="uint32" default="0">
@@ -76,24 +76,24 @@
         <parameter name="CAM_SHUTTERSPD" type="uint32" default="0">
             <description>Shutter Speed</description>
             <options>
-                <option name="1/500" value="A" />
-                <option name="1/640" value="B" />
-                <option name="1/800" value="C" />
-                <option name="1/1000" value="D" />
-                <option name="1/1250" value="E" />
+                <option name="1/500" value="5" />
+                <option name="1/640" value="6" />
+                <option name="1/800" value="7" />
+                <option name="1/1000" value="8" />
+                <option name="1/1250" value="9" />
             </options>
         </parameter>
         <parameter name="CAM_ISO" type="uint32" default="0">
             <description>ISO</description>
             <options>
-                <option name="100" value="A" />
-                <option name="150" value="B" />
-                <option name="200" value="C" />
-                <option name="300" value="D" />
-                <option name="400" value="E" />
-                <option name="600" value="F" />
-                <option name="800" value="G" />
-                <option name="1600" value="H" />
+                <option name="100" value="11" />
+                <option name="150" value="12" />
+                <option name="200" value="13" />
+                <option name="300" value="14" />
+                <option name="400" value="15" />
+                <option name="600" value="16" />
+                <option name="800" value="17" />
+                <option name="1600" value="18" />
             </options>
         </parameter>
         <parameter name="CAM_EV" type="float" default="0">
