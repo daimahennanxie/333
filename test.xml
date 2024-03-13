@@ -75,11 +75,10 @@
         <parameter name="CAM_SHUTTERSPD" type="uint32" default="0">
             <description>Shutter Speed</description>
             <options>
-                <option name="1/500" value="65" />
-                <option name="1/640" value="66" />
-                <option name="1/800" value="67" />
-                <option name="1/1000" value="68" />
-                <option name="1/1250" value="69" />
+                <option name="500" value="65" />
+                <option name="640" value="66" />
+                <option name="800" value="67" />
+                <option name="1000" value="68" />
             </options>
         </parameter>
         <parameter name="CAM_ISO" type="uint32" default="0">
@@ -98,11 +97,19 @@
         <parameter name="CAM_EV" type="uint32" default="0">
             <description>Exposure Compensation</description>
             <options>
-                <option name="-2" value="65" />
-                <option name="-1" value="66" />
-                <option name="0" value="67" />
+                <option name="+2" value="65" />
+                <option name="+1.7" value="66" />
+                <option name="+1.3" value="67" />
                 <option name="+1" value="68" />
-                <option name="+2" value="69" />
+                <option name="+0.7" value="69" />
+                <option name="+0.3" value="70" />
+                <option name="0" value="71" />
+                <option name="-0.3" value="72" />
+                <option name="-0.7" value="73" />
+                <option name="-1" value="74" />
+                <option name="-1.3" value="75" />
+                <option name="-1.7" value="76" />
+                <option name="-2" value="77" />
             </options>
         </parameter>
         <parameter name="CAM_COLORMODE" type="uint32" default="1">
@@ -117,6 +124,13 @@
             <options>
                 <option name="open" value="65" />
                 <option name="close" value="66" />
+            </options>
+        </parameter>
+         <parameter name="CAM_NETCONF" type="uint32" default="0">
+            <description>Network Configuration</description>
+            <options>
+                <option name="open" value="65" />
+                <option name="retry" value="66" />
             </options>
         </parameter>
     </parameters>
