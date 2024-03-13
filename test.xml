@@ -26,7 +26,6 @@
                 <option name="Video" value="1">
                     <!-- Conversely, when Camera Mode is set to Photo mode, the following parameters should be ignored (hidden from UI or disabled)-->
                     <exclusions>
-                        <exclude>CAM_PHOTOFMT</exclude>
                         <exclude>CAM_PHOTOQUAL</exclude>
                     </exclusions>
                     <parameterranges>
@@ -113,12 +112,11 @@
                 <option name="Vivid" value="66" />
             </options>
         </parameter>
-        <parameter name="CAM_PHOTOFMT" type="uint32" default="0">
-            <description>Image Format</description>
+        <parameter name="CAM_PHOTOTF" type="uint32" default="0">
+            <description>Image Transmission</description>
             <options>
-                <option name="Jpeg" value="0" />
-                <option name="Raw" value="1" />
-                <option name="Jpeg+Raw" value="2" />
+                <option name="open" value="65" />
+                <option name="close" value="66" />
             </options>
         </parameter>
     </parameters>
