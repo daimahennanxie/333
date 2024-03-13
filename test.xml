@@ -45,7 +45,7 @@
                 </option>
             </options>
         </parameter>
-        <parameter name="CAM_WBMODE" type="uint8" default="0">
+        <parameter name="CAM_WBMODE" type="uint32" default="0">
             <description>AWB Mode</description>
             <options>
                 <option name="Auto" value="A" />
@@ -73,7 +73,7 @@
                 </option>
             </options>
         </parameter>
-        <parameter name="CAM_SHUTTERSPD" type="uint8" default="0">
+        <parameter name="CAM_SHUTTERSPD" type="uint32" default="0">
             <description>Shutter Speed</description>
             <options>
                 <option name="1/500" value="A" />
@@ -83,7 +83,7 @@
                 <option name="1/1250" value="E" />
             </options>
         </parameter>
-        <parameter name="CAM_ISO" type="uint8" default="0">
+        <parameter name="CAM_ISO" type="uint32" default="0">
             <description>ISO</description>
             <options>
                 <option name="100" value="A" />
@@ -123,44 +123,5 @@
                 <option name="Jpeg+Raw" value="2" />
             </options>
         </parameter>
-        <parameter name="CAM_PHOTOQUAL" type="uint32" default="1">
-            <description>Image Quality</description>
-            <options>
-                <option name="Low" value="0" />
-                <option name="Medium" value="1" />
-                <option name="High" value="2" />
-                <option name="Ultra" value="3" />
-            </options>
-        </parameter>
     </parameters>
-    <localization>
-        <!-- If no appropriate locale is found, the original (above) will be used -->
-        <!-- At runtime, the code will go through every "description" and "option name" looking for "original" and replace it with "translated" -->
-        <locale name="de_DE">
-            <strings original="Camera Mode" translated="Kamera Modus" />
-            <strings original="Photo" translated="Foto" />
-            <strings original="White Balance Mode" translated="Weißabgleich Modus" />
-            <strings original="Incandescent" translated="Glühlampen" />
-            <strings original="Sunset" translated="Sonnenuntergang" />
-            <strings original="Sunny" translated="Sonnig" />
-            <strings original="Bloudy" translated="Bewölkt" />
-            <strings original="Fluorescent" translated="Fluoreszierende" />
-            <strings original="Lock" translated="Sperre" />
-            <strings original="Exposure Mode" translated="Belichtungsmodus" />
-            <strings original="Manual" translated="Manuell" />
-            <strings original="Shutter Speed" translated="Verschlusszeit" />
-            <strings original="Exposure Compensation" translated="Belichtungskorrektur" />
-            <strings original="Video Resolution" translated="Videoauflösung" />
-            <strings original="Average" translated="Durchschnitt" />
-            <strings original="Center" translated="Zentrum" />
-            <strings original="Color Mode" translated="Farbmodus" />
-            <strings original="Neutral" translated="Neutral" />
-            <strings original="Enhanced" translated="Verbessert" />
-            <strings original="Night" translated="Nacht" />
-            <strings original="Unprocessed" translated="Unverarbeitete" />
-            <strings original="Image Format" translated="Bildformat" />
-            <strings original="Image Quality" translated="Bildqualität" />
-            <strings original="High" translated="Hoch" />
-        </locale>
-    </localization>
 </mavlinkcamera>
