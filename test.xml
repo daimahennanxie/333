@@ -28,18 +28,17 @@
                     <exclusions>
                         <exclude>CAM_PHOTOFMT</exclude>
                         <exclude>CAM_PHOTOQUAL</exclude>
-                        <exclude>CAM_COLORMODE</exclude>
                     </exclusions>
                     <parameterranges>
                         <parameterrange parameter="CAM_ISO" condition="CAM_EXPMODE=1">
-                            <roption name="100" value="100" />
-                            <roption name="150" value="200" />
-                            <roption name="200" value="300" />
-                            <roption name="300" value="400" />
-                            <roption name="400" value="500" />
-                            <roption name="600" value="600" />
-                            <roption name="800" value="700" />
-                            <roption name="1600" value="800" />
+                            <roption name="100" value="58" />
+                            <roption name="150" value="59" />
+                            <roption name="200" value="60" />
+                            <roption name="300" value="61" />
+                            <roption name="400" value="62" />
+                            <roption name="600" value="63" />
+                            <roption name="800" value="64" />
+                            <roption name="1600" value="65" />
                         </parameterrange>
                     </parameterranges>
                 </option>
@@ -48,9 +47,9 @@
         <parameter name="CAM_WBMODE" type="uint32" default="0">
             <description>AWB Mode</description>
             <options>
-                <option name="Auto" value="2" />
-                <option name="Sunny" value="3" />
-                <option name="Cloudy" value="4" />
+                <option name="Auto" value="65" />
+                <option name="Sunny" value="66" />
+                <option name="Cloudy" value="67" />
             </options>
         </parameter>
         <parameter name="CAM_EXPMODE" type="uint32" default="0">
@@ -64,6 +63,7 @@
                     <exclusions>
                         <exclude>CAM_ISO</exclude>
                         <exclude>CAM_SHUTTERSPD</exclude>
+                         <exclude>CAM_COLORMODE</exclude>
                     </exclusions>
                 </option>
                 <option name="Manual" value="1">
@@ -76,43 +76,41 @@
         <parameter name="CAM_SHUTTERSPD" type="uint32" default="0">
             <description>Shutter Speed</description>
             <options>
-                <option name="1/500" value="5" />
-                <option name="1/640" value="6" />
-                <option name="1/800" value="7" />
-                <option name="1/1000" value="8" />
-                <option name="1/1250" value="9" />
+                <option name="1/500" value="65" />
+                <option name="1/640" value="66" />
+                <option name="1/800" value="67" />
+                <option name="1/1000" value="68" />
+                <option name="1/1250" value="69" />
             </options>
         </parameter>
         <parameter name="CAM_ISO" type="uint32" default="0">
             <description>ISO</description>
             <options>
-                <option name="100" value="11" />
-                <option name="150" value="12" />
-                <option name="200" value="13" />
-                <option name="300" value="14" />
-                <option name="400" value="15" />
-                <option name="600" value="16" />
-                <option name="800" value="17" />
-                <option name="1600" value="18" />
+                <option name="100" value="58" />
+                <option name="150" value="59" />
+                <option name="200" value="60" />
+                <option name="300" value="61" />
+                <option name="400" value="62" />
+                <option name="600" value="63" />
+                <option name="800" value="64" />
+                <option name="1600" value="65" />
             </options>
         </parameter>
-        <parameter name="CAM_EV" type="float" default="0">
+        <parameter name="CAM_EV" type="uint32" default="0">
             <description>Exposure Compensation</description>
             <options>
-                <option name="-2" value="-2" />
-                <option name="-1" value="-1" />
-                <option name="0" value="0" />
-                <option name="+1" value="1" />
-                <option name="+2" value="2" />
+                <option name="-2" value="65" />
+                <option name="-1" value="66" />
+                <option name="0" value="67" />
+                <option name="+1" value="68" />
+                <option name="+2" value="69" />
             </options>
         </parameter>
         <parameter name="CAM_COLORMODE" type="uint32" default="1">
             <description>Color Mode</description>
             <options>
-                <option name="Neutral" value="0" />
-                <option name="Enhanced" value="1" />
-                <option name="Night" value="3" />
-                <option name="Unprocessed" value="2" />
+                <option name="Normal" value="65" />
+                <option name="Vivid" value="66" />
             </options>
         </parameter>
         <parameter name="CAM_PHOTOFMT" type="uint32" default="0">
